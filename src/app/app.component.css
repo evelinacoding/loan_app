@@ -1,0 +1,28 @@
+
+a {
+  color: #FFF;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a:hover {
+  color: #000;
+}
+
+nav {
+  background-color: #000;
+}
+
+.container {
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-items {
+  padding: 10px;
+}
+
+.nav-items:hover {
+  background-color: rgb(132, 214, 8)
+}
