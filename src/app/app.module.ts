@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,6 +13,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { ResultsComponent } from './results/results.component';
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule} from '@angular/material/button';
+import { MatIcon, MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -29,6 +34,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatFormFieldModule,
     MatToolbarModule,
     FlexLayoutModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

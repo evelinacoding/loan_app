@@ -2,22 +2,27 @@
     <mat-card-title>Loan Calculator</mat-card-title>
 
     <mat-card-content >
-        <div fxLayout="column" color="primary">
+        <div>
+          <form fxLayout="column" [formGroup]="loanForm">
             <mat-form-field fxLayout="row">
               <label >Loan Amount</label>
-              <input matInput>
+              <input  name="loanAmount" formControlName="loanAmount" matInput>
             </mat-form-field>
             <br />
             <mat-form-field fxLayout="row">
-              <label >Interest Rate</label>
-              <input matInput>
+              <label>Interest Rate</label>
+              <input  name="interestRate" formControlName="interestRate" matInput>
             </mat-form-field>
             <br />
             <mat-form-field fxLayout="row">
-              <label >Number of Years</label>
-              <input matInput>
+              <label>Number of Years</label>
+              <input name="loanTerm" formControlName="loanTerm" matInput>
             </mat-form-field>
-            <br />
+
+            <button (click)="calculateTotal()" mat-button>Submit</button>
+          </form>
+          <br />
+
         </div>
     </mat-card-content>
 </mat-card>
@@ -25,8 +30,10 @@
 <mat-card fxFlex>
   <mat-card-title>Results</mat-card-title>
   <mat-card-content>
-    <!-- Here would go the results. Build a component to insert here-->
 
+
+    <!-- Here would go the results. Build a component to insert here-->
+    <app-results [monthlyPayment]="monthlyPayment" [interestRate]="interestRate"></app-results>
 
   </mat-card-content>
 </mat-card>
