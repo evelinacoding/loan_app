@@ -1,0 +1,77 @@
+.container {
+  background-color: rgb(35, 112, 67);
+  margin: 25px;
+}
+
+
+form {
+  background-color: rgb(170, 170, 170);
+  border: 5px solid rgb(26, 49, 42);
+  border-radius: 13px;
+  padding: 20px;
+  width: 500px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+mat-card-content {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.inner-form {
+  margin: 0 auto;
+}
+
+.form-container{
+  padding: 29px;
+
+}
+
+.title {
+  color: #FFF;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+mat-card-title {
+  margin: 10px;
+
+}
+
+
+mat-form-field {
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.form-width {
+  background-color: red;
+}
+
+button {
+  background-color: #205c6b;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 30px;
+  font-size: 30px;
+}
+
+
+.results-container {
+  background-color: rgb(51, 72, 73);
+  padding-top: 45px;
+  border-radius: 40px;
+}
+
+.results-content-container {
+  width: 100%;
+}

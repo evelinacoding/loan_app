@@ -3,10 +3,10 @@ Date: 5/18/24
 Title: results.component.html
 Description: The results component for the calculator-->
 
-
+<br />
 <div class="results">
 
-  <div>
+  <div class="results-inner-container">
     <div class="monthly-payment">
       <h3>Your Monthly Payment:</h3>
     </div>
@@ -15,9 +15,10 @@ Description: The results component for the calculator-->
       {{ "$" + (monthlyPayment | number:'1.2-2') }}
     </div>
 
+    <br /> <br />
     <div class="total-interest">
       <h3>Total Interest Paid</h3>
     </div>
     <br /> <br />
-    {{ "$" + (interestRate | number: '1.2-2')}}
+    {{ "$" + (totalInterestPaid | number: '1.2-2')}}
   </div>

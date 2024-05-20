@@ -8,7 +8,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
 
@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
     //Calculate the monthly payment with the values from the input form
     this.monthlyPayment = loanAmount * (ratePerPeriod * Math.pow((ratePerPeriod + 1), months)) / (Math.pow((1 + ratePerPeriod), months) - 1)
 
-    this.interestRate = (this.monthlyPayment * months) - loanAmount;
+    this.totalInterestPaid = (this.monthlyPayment * months) - loanAmount;
   }
 
 }

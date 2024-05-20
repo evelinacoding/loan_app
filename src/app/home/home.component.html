@@ -1,22 +1,28 @@
-<mat-card fxFlex fxLayoutGap="10px">
-    <mat-card-title>Loan Calculator</mat-card-title>
+<mat-card class="container" fxFlex >
 
-    <mat-card-content >
-        <div>
-          <form fxLayout="column" [formGroup]="loanForm">
-            <mat-form-field fxLayout="row">
+    <mat-card-content class="form-container" mat-elevation >
+        <div class="inner-form">
+          <mat-card-title class="title"><h1>Loan Calculator</h1></mat-card-title>
+
+          <form fxLayout="column" [formGroup]="loanForm" fxLayoutAlign="center" >
+            <mat-form-field fxLayout="row" fxLayoutAlign="center">
+              <div class="label-input">
               <label >Loan Amount</label>
-              <input  name="loanAmount" formControlName="loanAmount" matInput>
+              <input  name="loanAmount" formControlName="loanAmount" matInput></div>
             </mat-form-field>
             <br />
-            <mat-form-field fxLayout="row">
-              <label>Interest Rate</label>
-              <input  name="interestRate" formControlName="interestRate" matInput>
+            <mat-form-field fxLayout="row" fxLayoutAlign="center">
+              <div class="label-input">
+                <label>Interest Rate</label>
+                <input  name="interestRate" formControlName="interestRate" matInput>
+              </div>
             </mat-form-field>
             <br />
-            <mat-form-field fxLayout="row">
-              <label>Number of Years</label>
-              <input name="loanTerm" formControlName="loanTerm" matInput>
+            <mat-form-field fxLayout="row" fxLayoutAlign="center">
+              <div class="label-input">
+                <label>Number of Years</label>
+                <input name="loanTerm" formControlName="loanTerm" matInput>
+              </div>
             </mat-form-field>
 
             <button (click)="calculateTotal()" mat-button>Submit</button>
@@ -25,15 +31,17 @@
 
         </div>
     </mat-card-content>
-</mat-card>
 
-<mat-card fxFlex>
-  <mat-card-title>Results</mat-card-title>
-  <mat-card-content>
 
+<div class="results-container" fxFlex>
+  <mat-card-title class="title">Results</mat-card-title>
+
+
+    <div class="results-content-container">
 
     <!-- Here would go the results. Build a component to insert here-->
-    <app-results [monthlyPayment]="monthlyPayment" [interestRate]="interestRate"></app-results>
+    <app-results [monthlyPayment]="monthlyPayment" [totalInterestPaid]="totalInterestPaid"></app-results>
+    </div>
 
-  </mat-card-content>
+</div>
 </mat-card>
