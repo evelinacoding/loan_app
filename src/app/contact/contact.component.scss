@@ -1,0 +1,31 @@
+mat-card {
+  width: 50%;
+  margin: 30px;
+}
+
+img {
+  width: 200px;
+  margin-left: 40%;
+}
+
+mat-card-title {
+  margin-left: 35%;
+  margin-top: 10%;
+  padding: 30px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.address-container {
+  padding-top: 10%;
+
+}
+
+mat-card-subtitle {
+  font-size: 25px;
+  color: green;
+  padding-top: 15px;
+  font-family: "DM Serif Display", serif;
+}
+

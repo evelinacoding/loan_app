@@ -20,5 +20,7 @@ Description: The results component for the calculator-->
       <h3>Total Interest Paid</h3>
     </div>
     <br /> <br />
-    {{ "$" + (totalInterestPaid | number: '1.2-2')}}
+    <div class="total-interest">
+      {{ "$" + (totalInterestPaid | number: '1.2-2')}}
+    </div>
   </div>

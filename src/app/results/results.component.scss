@@ -4,11 +4,21 @@
 }
 
 .results-inner-container {
-  padding: 20px;
+  padding: 40px;
 }
 
 h3 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #fff;
+  font-size: 20px;
+}
+
+.monthly-payment {
+  color: rgb(186, 255, 186);
+  font-size: 20px;
+}
+
+.total-interest {
+  color: rgb(186, 255, 186);
   font-size: 20px;
 }

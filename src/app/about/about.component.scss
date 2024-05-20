@@ -1,9 +1,41 @@
-/*.about-us {
-  background-color: rgb(27, 63, 58);
+.about-us {
+  background-color: rgb(35, 112, 67);
+  margin: 40px;
 }
 
 img {
   width: 400px;
   height: auto;
+  margin: 30px;
 }
-*/
+
+.image-container {
+  background-color: rgb(156, 156, 156);
+  text-align: center;
+}
+
+mat-card {
+  width: 50%;
+  margin: 40px;
+}
+
+mat-card-title {
+  padding: 30px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+}
+
+.paragraph-container {
+  padding: 20px 50px;
+}
+
+.calculator-card {
+  padding: 10px;
+  width: 25%;
+  background-color: rgb(59, 59, 59);
+}
+
+mat-card-content {
+  box-shadow: 10px 10px #000;
+  border-radius: 10px;
+}

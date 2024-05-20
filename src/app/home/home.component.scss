@@ -31,15 +31,14 @@ mat-card-content {
 .title {
   color: #FFF;
   text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 40px;
 }
 
 h1 {
-  font-size: 30px;
-}
-
-mat-card-title {
-  margin: 10px;
-
+  font-size: 50px;
+  font-family: "DM Serif Display", serif;
+  padding-bottom: 10px;
 }
 
 
@@ -63,15 +62,17 @@ button {
   margin-top: 10%;
   padding: 30px;
   font-size: 30px;
+  color: rgb(178, 255, 178);
 }
 
 
 .results-container {
   background-color: rgb(51, 72, 73);
-  padding-top: 45px;
-  border-radius: 40px;
+  padding-top: 5%;
+  border-radius: 10px;
 }
 
 .results-content-container {
   width: 100%;
+  padding-top: 30px;
 }
